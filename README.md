@@ -10,6 +10,7 @@ Supported providers (first_word):
 - Google Drive (drive)
 - Github (github)
 - Spotify (spotify)
+- Wolfram (wolfram)
 - Pornhub (pornhub)
 - Chaturbate (chaturbate)
 
