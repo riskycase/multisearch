@@ -33,10 +33,10 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
             case 'docs':
                 window.location = `https://docs.google.com/document/?q=${search_query}`;
                 break;
-            case 'youtube': 
+            case 'youtube':
                 window.location = `https://www.youtube.com/results?search_query=${search_query}`;
                 break;
-            default: 
+            default:
                 window.location = `https://www.google.com/search?q=${search_query}`;
         }
 });
