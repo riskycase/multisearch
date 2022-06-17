@@ -53,7 +53,7 @@ document.querySelector(".search_input").addEventListener("keyup", (e) => {
 				window.location = `https://www.youtube.com/results?search_query=${search_query}`;
 				break;
 			case "drive":
-				window.location = `https://drive.google.com/drive/?q=${search_query}`;
+				window.location = `https://drive.google.com/drive/search?q=${search_query}`;
 				break;
 			case "sheets":
 				window.location = `https://docs.google.com/spreadsheets/?q=${search_query}`;
