@@ -6,9 +6,12 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
     switch(search_engine){
         case 'google':
         case 'youtube':
-        case 'docs': break;
+        case 'docs':
+        case 'drive':
+        case 'slides':
+        case 'sheets': break;
         default: search_engine = 'google';
-        search_query = input;
+        
     }
     if(search_engine !== current_search) {
         current_search = search_engine;
@@ -17,14 +20,32 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
             case 'google':
                 image.src = 'google.png';
                 image.alt = 'Google icon';
+                search_query = input.slice(7,);
                 break;
             case 'youtube':
                 image.src = 'youtube.png';
                 image.alt = 'YouTube icon';
+                search_query = input.slice(8,);
                 break;
             case 'docs':
                 image.src = 'docs.png';
                 image.alt = 'Google Docs icon';
+                search_query = input.slice(5,);
+                break;
+            case 'drive':
+                image.src = 'drive.png';
+                image.alt = 'Google Drive icon';
+                search_query = input.slice(6,);
+                break;
+            case 'slides':
+                image.src = 'slides.png';
+                image.alt = 'Google Slides icon';
+                search_query = input.slice(7,);
+                break;
+            case 'sheets':
+                image.src = 'sheets.png';
+                image.alt = 'Google Sheets icon';
+                search_query = input.slice(7,);
                 break;
         }
     }
@@ -35,6 +56,15 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
                 break;
             case 'youtube': 
                 window.location = `https://www.youtube.com/results?search_query=${search_query}`;
+                break;
+            case 'drive': 
+                window.location = `https://drive.google.com/drive/u/0/search?q=${search_query}`;
+                break;
+            case 'slides': 
+                window.location = `https://docs.google.com/presentation/u/0/?tgif=d&q=${search_query}`;
+                break;
+            case 'sheets': 
+                window.location = `https://docs.google.com/spreadsheets/u/0/?tgif=d&q=${search_query}`;
                 break;
             default: 
                 window.location = `https://www.google.com/search?q=${search_query}`;
