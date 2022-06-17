@@ -2,14 +2,7 @@ let current_search = 'google'
 document.querySelector('.search_input').addEventListener('keyup', e => {
     const input = e.target.value;
     let search_engine = input.split(' ')[0].toLowerCase();
-    let search_query = input.split(' ').splice(0).join(' ');
-    switch(search_engine){
-        case 'google':
-        case 'youtube':
-        case 'docs': break;
-        default: search_engine = 'google';
-        search_query = input;
-    }
+    let search_query = input.substring(input.indexOf(' ')+1);
     if(search_engine !== current_search) {
         current_search = search_engine;
         const image = document.querySelector('.search_icon');
