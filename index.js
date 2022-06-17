@@ -6,6 +6,7 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
     switch(search_engine){
         case 'google':
         case 'drive':
+        case 'slides':
         case 'youtube':
         case 'docs': break;
         default: search_engine = 'google';
@@ -24,6 +25,10 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
             case 'drive':
                 image.src = 'drive.png';
                 image.alt = 'Google Drive icon';
+                break;
+            case 'slides':
+                image.src = 'slides.png';
+                image.alt = 'Google Slides icon';
                 break;
             case 'youtube':
                 image.src = 'youtube.png';
