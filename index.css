@@ -101,6 +101,9 @@ body {
     border: none;
     padding: 0.5rem 0.75rem;
 }
+.search_button:hover{
+    cursor: pointer;
+}
 .search_icon {
     width: 1.5rem;
     height: 1.5rem;

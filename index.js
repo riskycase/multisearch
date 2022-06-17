@@ -1,9 +1,46 @@
-let current_search = 'google'
+let current_search = 'google';
+
+function button_trigger(){
+    switch(search_engine) {
+        case 'docs':
+            window.location = `https://docs.google.com/document/?q=${search_query}`;
+            break;
+        case 'youtube': 
+            window.location = `https://www.youtube.com/results?search_query=${search_query}`;
+            break;
+        case 'drive': 
+            window.location = `https://drive.google.com/drive/u/0/search?q=${search_query}`;
+            break;
+        case 'slides': 
+            window.location = `https://docs.google.com/presentation/u/0/?tgif=d&q=${search_query}`;
+            break;
+        case 'sheets': 
+            window.location = `https://docs.google.com/spreadsheets/u/0/?tgif=d&q=${search_query}`;
+            break;
+        case 'pornhub': 
+            window.location = `https://www.pornhub.com/video/search?search=${search_query}`;
+            break;
+        case 'chaturbate': 
+            window.location = `https://chaturbate.com/?keywords=${search_query}`;
+            break;
+        case 'wolfram':
+            window.location = `https://www.wolframalpha.com/input?i=${search_query}`;
+            break;
+        case 'github':
+            window.location = `https://github.com/search?q=${search_query}`;
+            break;
+        case 'spotify':
+            window.location = `https://open.spotify.com/search/${search_query}`;
+            break;
+        default: 
+            window.location = `https://www.google.com/search?q=${search_query}`;
+    }
+}
 
 document.querySelector('.search_input').addEventListener('keyup', e => {
     const input = e.target.value; 
-    let search_engine = input.split(' ')[0].toLowerCase();
-    let search_query = input.replace(search_engine+' ','');
+    window.search_engine = input.split(' ')[0].toLowerCase();
+    window.search_query = input.replace(search_engine+' ','');
 
     switch(search_engine){
         case 'google':
@@ -107,4 +144,5 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
             default: 
                 window.location = `https://www.google.com/search?q=${search_query}`;
         }}
+            
 });
