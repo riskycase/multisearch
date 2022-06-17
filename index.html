@@ -5,13 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Multisearch</title>
         <link rel="icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div>
-            <span>Multisearch</span>
-            <span>Start typing to choose a search engine</span>
-            <input type="text" alt="Search box" placeholder="What are you curious about today?">
-            <button type="submit">Search</button>
+        <div class="container">
+            <span class="heading">Multisearch</span>
+            <span class="description">Start typing to choose a search engine</span>
+            <div class="search_wrapper">
+                <input class="search_input" type="text" name="search" alt="Search box" required pattern=".*\S+.*">
+                <label class="search_label" for="search">Search</label>
+            </div>
+            <button class="search_button" type="submit">Search <span class="material-icons">arrow_forward</span> </button>
         </div>
     </body>
 </html>
