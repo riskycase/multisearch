@@ -2,7 +2,7 @@ let current_search = 'google'
 document.querySelector('.search_input').addEventListener('keyup', e => {
     const input = e.target.value;
     let search_engine = input.split(' ')[0].toLowerCase();
-    let search_query = input.split(' ').splice(0).join(' ');
+    let search_query = input.split(' ').slice(1).join(' ');
     switch(search_engine){
         case 'google':
         case 'youtube':
