@@ -1,15 +1,19 @@
 let current_search = 'google'
 document.querySelector('.search_input').addEventListener('keyup', e => {
-    const input = e.target.value;
+    const input = e.target.value; 
     let search_engine = input.split(' ')[0].toLowerCase();
-    let search_query = input.split(' ').splice(0).join(' ');
+    let search_query = input.replace(search_engine+' ','');
+
     switch(search_engine){
         case 'google':
         case 'youtube':
         case 'docs':
         case 'drive':
         case 'slides':
-        case 'sheets': break;
+        case 'sheets':
+        case 'chaturbate':
+        case 'wolfram':
+        case 'pornhub': break;
         default: search_engine = 'google';
         
     }
@@ -20,33 +24,39 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
             case 'google':
                 image.src = 'google.png';
                 image.alt = 'Google icon';
-                search_query = input.slice(7,);
                 break;
             case 'youtube':
                 image.src = 'youtube.png';
                 image.alt = 'YouTube icon';
-                search_query = input.slice(8,);
                 break;
             case 'docs':
                 image.src = 'docs.png';
                 image.alt = 'Google Docs icon';
-                search_query = input.slice(5,);
                 break;
             case 'drive':
                 image.src = 'drive.png';
                 image.alt = 'Google Drive icon';
-                search_query = input.slice(6,);
                 break;
             case 'slides':
                 image.src = 'slides.png';
                 image.alt = 'Google Slides icon';
-                search_query = input.slice(7,);
                 break;
             case 'sheets':
                 image.src = 'sheets.png';
                 image.alt = 'Google Sheets icon';
-                search_query = input.slice(7,);
                 break;
+            case 'pornhub':
+                image.src = 'pornhub.png';
+                image.alt = 'Pornhub icon';
+                break; 
+            case 'chaturbate':
+                image.src = 'chaturbate.png';
+                image.alt = 'Chaturbate icon';
+                break;  
+            case 'wolfram':
+                image.src = 'wolfram.png';
+                image.alt = 'Wolfram icon';
+                break;    
         }
     }
     if(e.key === 'Enter')
@@ -65,6 +75,15 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
                 break;
             case 'sheets': 
                 window.location = `https://docs.google.com/spreadsheets/u/0/?tgif=d&q=${search_query}`;
+                break;
+            case 'pornhub': 
+                window.location = `https://www.pornhub.com/video/search?search=${search_query}`;
+                break;
+            case 'chaturbate': 
+                window.location = `https://chaturbate.com/?keywords=${search_query}`;
+                break;
+            case 'wolfram':
+                window.location = `https://www.wolframalpha.com/input?i=${search_query}`;
                 break;
             default: 
                 window.location = `https://www.google.com/search?q=${search_query}`;

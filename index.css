@@ -3,6 +3,10 @@ html, body {
     width: 100vw;
 }
 body {
+    height: 100vh;
+    background: linear-gradient(135deg, #F1E1C2, #FCBC98, #ff0f7b, #40c9ff, #F1E1C2);
+    background-size: 400% 400%;
+    animation: bg_gradient 10s infinite ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,6 +15,17 @@ body {
     font-family: 'Comfortaa', cursive;
     margin: 0;
 }
+@keyframes bg_gradient {
+    0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
 .container {
     display: flex;
     flex-direction: column;
@@ -50,7 +65,7 @@ body {
     position: absolute;
     font-size: 1.25rem;
     transform-origin: left;
-    background-color: white;
+    background-color: none;
     padding: 0 0.5rem;
     z-index: -1;
     margin-left: 1.5rem;
@@ -60,7 +75,7 @@ body {
 }
 .search_wrapper:focus-within > .search_label,
 .search_input:valid + .search_label {
-    transform: translateY(-1.5rem) scale(0.75);
+    transform: translateY(-1rem) scale(0.75);
     transition: linear 0.25s;
     z-index: 1;
     color: #303F9F;
