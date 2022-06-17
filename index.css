@@ -17,8 +17,8 @@ body {
     max-width: min(100vw, 80rem);
     /* Hint */
     margin: auto;
-    text-align: center;
-    /* justify-content:  center; */
+    /* text-align: center; */
+    justify-content:  center;
 }
 .container > * {
     margin: 0.5rem;
