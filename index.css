@@ -32,8 +32,6 @@ body {
     max-width: min(100vw, 80rem);
     /* Hint */
     text-align: center;
-    justify-content: center;
-    align-items: center;
 }
 .container > * {
     margin: 0.5rem;
