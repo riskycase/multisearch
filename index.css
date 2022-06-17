@@ -18,6 +18,7 @@ body {
     /* Hint */
     margin: auto;
     text-align: center;
+    justify-content: center;
 }
 .container > * {
     margin: 0.5rem;
