@@ -7,6 +7,7 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
         case 'google':
         case 'drive':
         case 'slides':
+        case 'sheets':
         case 'youtube':
         case 'docs': break;
         default: search_engine = 'google';
@@ -30,6 +31,10 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
                 image.src = 'slides.png';
                 image.alt = 'Google Slides icon';
                 break;
+            case 'sheets':
+                image.src = 'sheets.png';
+                image.alt = 'Google Sheets icon';
+                break;
             case 'youtube':
                 image.src = 'youtube.png';
                 image.alt = 'YouTube icon';
@@ -50,6 +55,9 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
                 break;
             case 'slides':
                 window.location = `https://docs.google.com/presentation/?q=${query}`;
+                break;
+            case 'sheets':
+                window.location = `https://docs.google.com/spreadsheets/?q=${query}`;
                 break;
             case 'youtube':
                 window.location = `https://www.youtube.com/results?search_query=${query}`;
