@@ -10,3 +10,7 @@
 
 - [ ] Add other search providers (GitHub, Spotify, etc)
 - [ ] Additional CSS styling (as you like)
+
+### Site link:
+
+https://aphievel.github.io/multisearch/

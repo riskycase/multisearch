@@ -1,7 +1,7 @@
 # Multisearch
 
-Vanilla Web implementation of a single site to search from multiple providers.
-Done for a DevSoc BITS Goa Assignment
+Vanilla Web implementation of a single site to search from multiple providers.<br>
+Done for a DevSoc BITS Goa Assignment.<br>
 Forked from: https://github.com/riskycase/multisearch
 
 Supported providers (first_word):
