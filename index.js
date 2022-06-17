@@ -10,6 +10,8 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
         default: search_engine = 'google';
         search_query = input;
     }
+    let query = search_query.replace(search_engine, '');
+    // console.log(query);
     if(search_engine !== current_search) {
         current_search = search_engine;
         const image = document.querySelector('.search_icon');
@@ -31,12 +33,12 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
     if(e.key === 'Enter')
         switch(search_engine) {
             case 'docs':
-                window.location = `https://docs.google.com/document/?q=${search_query}`;
+                window.location = `https://docs.google.com/document/?q=${query}`;
                 break;
             case 'youtube':
-                window.location = `https://www.youtube.com/results?search_query=${search_query}`;
+                window.location = `https://www.youtube.com/results?search_query=${query}`;
                 break;
             default:
-                window.location = `https://www.google.com/search?q=${search_query}`;
+                window.location = `https://www.google.com/search?q=${query}`;
         }
 });
