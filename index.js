@@ -1,4 +1,5 @@
 let current_search = 'google'
+
 document.querySelector('.search_input').addEventListener('keyup', e => {
     const input = e.target.value; 
     let search_engine = input.split(' ')[0].toLowerCase();
@@ -13,6 +14,8 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
         case 'sheets':
         case 'chaturbate':
         case 'wolfram':
+        case 'github':
+        case 'spotify':
         case 'pornhub': break;
         default: search_engine = 'google';
         
@@ -56,10 +59,20 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
             case 'wolfram':
                 image.src = 'wolfram.png';
                 image.alt = 'Wolfram icon';
-                break;    
+                break;
+            case 'github':
+                image.src = 'github.png';
+                image.alt = 'Github icon';
+                break;   
+            case 'spotify':
+                image.src = 'spotify.png';
+                image.alt = 'Spotify icon';
+                break; 
         }
     }
-    if(e.key === 'Enter')
+
+
+    if(e.key === 'Enter'){
         switch(search_engine) {
             case 'docs':
                 window.location = `https://docs.google.com/document/?q=${search_query}`;
@@ -85,7 +98,13 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
             case 'wolfram':
                 window.location = `https://www.wolframalpha.com/input?i=${search_query}`;
                 break;
+            case 'github':
+                window.location = `https://github.com/search?q=${search_query}`;
+                break;
+            case 'spotify':
+                window.location = `https://open.spotify.com/search/${search_query}`;
+                break;
             default: 
                 window.location = `https://www.google.com/search?q=${search_query}`;
-        }
+        }}
 });
