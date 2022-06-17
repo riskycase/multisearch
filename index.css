@@ -31,6 +31,7 @@ body {
     }
 }
 .description {
+    text-align: center; 
     font-style: oblique;
 }
 .search_wrapper {
