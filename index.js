@@ -13,7 +13,7 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
         default: search_engine = 'google';
         search_query = input;
     }
-    let query = search_query.replace(search_engine, '');
+    let query = search_query.replace((search_engine + ' '), '');
     // console.log(query);
     if(search_engine !== current_search) {
         current_search = search_engine;
