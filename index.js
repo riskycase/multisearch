@@ -5,6 +5,7 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
     let search_query = input.split(' ').splice(0).join(' ');
     switch(search_engine){
         case 'google':
+        case 'drive':
         case 'youtube':
         case 'docs': break;
         default: search_engine = 'google';
@@ -20,6 +21,10 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
                 image.src = 'google.png';
                 image.alt = 'Google icon';
                 break;
+            case 'drive':
+                image.src = 'drive.png';
+                image.alt = 'Google Drive icon';
+                break;
             case 'youtube':
                 image.src = 'youtube.png';
                 image.alt = 'YouTube icon';
@@ -34,6 +39,9 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
         switch(search_engine) {
             case 'docs':
                 window.location = `https://docs.google.com/document/?q=${query}`;
+                break;
+            case 'drive':
+                window.location = `https://drive.google.com/drive/u/0/search?q=${query}`;
                 break;
             case 'youtube':
                 window.location = `https://www.youtube.com/results?search_query=${query}`;
