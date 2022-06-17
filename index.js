@@ -8,6 +8,7 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
         case 'drive':
         case 'slides':
         case 'sheets':
+        case 'spotify':
         case 'youtube':
         case 'docs': break;
         default: search_engine = 'google';
@@ -35,6 +36,10 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
                 image.src = 'sheets.png';
                 image.alt = 'Google Sheets icon';
                 break;
+            case 'spotify':
+                image.src = 'spotify.png';
+                image.alt = 'Spotify icon';
+                break;
             case 'youtube':
                 image.src = 'youtube.png';
                 image.alt = 'YouTube icon';
@@ -58,6 +63,9 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
                 break;
             case 'sheets':
                 window.location = `https://docs.google.com/spreadsheets/?q=${query}`;
+                break;
+            case 'spotify':
+                window.location = `https://open.spotify.com/search/${query}`;
                 break;
             case 'youtube':
                 window.location = `https://www.youtube.com/results?search_query=${query}`;

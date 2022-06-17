@@ -6,6 +6,7 @@ Supported providers (first_word):
 - Google Drive (drive)
 - Google Slides (slides)
 - Google Sheets (sheets)
+- Spotify (spotify)
 - YouTube (youtube)
 - Google Docs (docs)
 
