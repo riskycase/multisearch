@@ -2,11 +2,14 @@ let current_search = 'google'
 document.querySelector('.search_input').addEventListener('keyup', e => {
     const input = e.target.value;
     let search_engine = input.split(' ')[0].toLowerCase();
-    let search_query = input.split(' ').splice(0).join(' ');
+    let search_query = input.split(' ').splice(1);
     switch(search_engine){
         case 'google':
         case 'youtube':
-        case 'docs': break;
+        case 'docs':
+        case 'sheets':
+        case 'drive':
+        case 'slides': break;
         default: search_engine = 'google';
         search_query = input;
     }
@@ -26,6 +29,16 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
                 image.src = 'docs.png';
                 image.alt = 'Google Docs icon';
                 break;
+            case 'drive':
+                image.src = 'drive.png';
+                image.alt = 'Google Drive icon ';
+            case 'slides':
+                image.src = 'slides.png';
+                image.alt = 'Google slides icon';
+            case 'sheets':
+                image.src = 'slides.png';
+                image.alt = 'Google slides icon';
+                
         }
     }
     if(e.key === 'Enter')
@@ -36,7 +49,17 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
             case 'youtube': 
                 window.location = `https://www.youtube.com/results?search_query=${search_query}`;
                 break;
+            case 'sheets':
+                window.location = `https://docs.google.com/spreadsheets/u/0/?tgif=d&q=${search_query}`;
+                break;
+            case 'drive':
+                window.location = `https://drive.google.com/drive/u/0/search?q=${search_query}`;
+                break;
+            case 'slides':
+                window.location = `https://docs.google.com/presentation/u/0/?tgif=d&q=${search_query}`;
+                break;
             default: 
                 window.location = `https://www.google.com/search?q=${search_query}`;
+            
         }
 });
