@@ -15,7 +15,8 @@ body {
     display: flex;
     flex-direction: column;
     max-width: min(100vw, 80rem);
-    /* Hint */
+    justify-content: center;
+    align-items: center;
 }
 .container > * {
     margin: 0.5rem;
