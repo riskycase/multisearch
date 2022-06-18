@@ -19,6 +19,18 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
                 image.src = 'docs.png';
                 image.alt = 'Google Docs icon';
                 break;
+            case 'sheets':
+                image.src = 'sheets.png';
+                image.alt = 'google sheets icon';
+                break;
+            case 'drive':
+                image.src = 'google-drive.png';
+                image.alt = 'google drive icon';
+                break;
+            case 'slides':
+                image.src = 'slides.png';
+                image.alt = 'google slides icon';
+                break;
         }
     }
     if(e.key === 'Enter')
@@ -28,6 +40,15 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
                 break;
             case 'youtube': 
                 window.location = `https://www.youtube.com/results?search_query=${search_query}`;
+                break;
+            case 'sheets':
+                window.location = `https://docs.google.com/spreadsheets/?q=${search_query}`;
+                break;
+            case 'drive':
+                window.location = `https://drive.google.com/drive/search?q=${search_query}`;
+                break;
+            case 'slides':
+                window.location = `https://docs.google.com/presentation/?tgif=d&q=${search_query}`;
                 break;
             default: 
                 window.location = `https://www.google.com/search?q=${search_query}`;
