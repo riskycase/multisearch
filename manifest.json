@@ -1,0 +1,12 @@
+{
+    "name": "Extension",
+    "description": "New tabs redirect to Multisearch",
+    "version": "1",
+    "chrome_url_overrides": {
+        "newtab": "https://aryanbhosale.github.io/multisearch"
+    },
+    "manifest_version": 3,
+    "permissions": [
+        "tabs"
+    ]
+}
