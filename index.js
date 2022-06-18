@@ -57,7 +57,7 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
             case 'slides':
                 window.location = `https://docs.google.com/presentation/?q=${search_query}`;
                 break;
-             case 'sheets':
+            case 'sheets':
                 window.location = `https://docs.google.com/spreadsheets?q=${search_query}`;
                 break;
             default: 
