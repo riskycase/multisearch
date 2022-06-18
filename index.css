@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     max-width: min(100vw, 80rem);
-    /* Hint */
+    align-items: center; /* alligned to center */
 }
 .container > * {
     margin: 0.5rem;
