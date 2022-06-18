@@ -1,3 +1,54 @@
+/*
+const page = document.querySelector(".page");
+const toggle = document.querySelector(".toggle-input");
+const toggleIcon = page.querySelector(".toggle-icon");
+
+setCheckedState();
+
+function setCheckedState() {
+  // checks if localStorage has a "checked" value set at all
+  if (!(localStorage.checked === undefined)) {
+    // if it does, it sets the state of the toggle accordingly
+    toggle.checked = isTrue(localStorage.getItem("checked"));
+    // after setting the toggle state, the theme is adjusted according to the checked state
+    toggleTheme();
+  }
+}
+
+function replaceClass() {
+  if (toggle.checked) {
+    page.classList.replace("light", "dark");
+  } else {
+    page.classList.replace("dark", "light");
+  }
+}
+function toggleIconTheme() {
+  if (page.classList.contains("light")) {
+    toggleIcon.src = "moon.png";
+    toggleIcon.alt = "Switch to Dark mode";
+  } else {
+    toggleIcon.src = "sun.png";
+    toggleIcon.alt = "Switch to Light mode";
+  }
+}
+function toggleTheme() {
+  replaceClass();
+  toggleIconTheme();
+  updateLocalStorage();
+}
+function updateLocalStorage() {
+  localStorage.setItem("checked", toggle.checked);
+}
+
+function isTrue(value) {
+  // convert string to boolean
+  return value === "true";
+}
+
+toggle.addEventListener("change", toggleTheme);
+
+*/
+
 let current_search = "google";
 document.querySelector(".search_input").addEventListener("keyup", (e) => {
   const input = e.target.value;
