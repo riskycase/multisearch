@@ -1,9 +1,3 @@
-chrome.browserAction.onClicked.addListener(function(activeTab)
-{
-    var newURL = "https://aryanbhosale.github.io/multisearch";
-    chrome.tabs.create({ url: newURL });
-});
-
 let current_search = 'google';
 
 function button_trigger(){
