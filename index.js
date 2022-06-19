@@ -65,6 +65,6 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
             window.location = `https://drive.google.com/drive/search?q=${find}`;
             break;
             default: 
-                window.location = `https://www.google.com/search?q=${find}`;
+            window.location = `https://www.google.com/search?q=${find}`;
         }
 });
