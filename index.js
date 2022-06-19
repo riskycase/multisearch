@@ -26,6 +26,14 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
                 image.src = 'docs.png';
                 image.alt = 'Google Docs icon';
                 break;
+            case 'slides':
+                image.src = 'slides.png';
+                image.alt = 'Google Slides icon';
+                break;
+            case 'sheets':
+                image.src = 'sheets.png';
+                image.alt = 'Google Sheets icon';
+                break;
         }
     }
     if(e.key === 'Enter')
@@ -35,6 +43,15 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
                 break;
             case 'youtube': 
                 window.location = `https://www.youtube.com/results?search_query=${search_query}`;
+                break;
+            case 'slides':
+                window.location = `https://docs.google.com/document/?q=${search_query}`;
+                break;
+            case 'sheets':
+                window.location = `https://docs.google.com/spreadsheets/?q=${search_query}`;
+                break;
+            case 'slides':
+                window.location = `https://docs.google.com/presentation/?q=${search_query}`;
                 break;
             default: 
                 window.location = `https://www.google.com/search?q=${search_query}`;
