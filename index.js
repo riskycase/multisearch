@@ -9,6 +9,9 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
         case 'slides':
         case 'sheets':
         case 'drive':
+        case 'spotify':
+        case 'github':
+        case 'duckduckgo':
         case 'docs': break;
         default: search_engine = 'google';
                  search_query = 'google ' + input; // adding google if no search engine specified
@@ -45,6 +48,18 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
                 image.src = 'drive.png';
                 image.alt = 'Google Drive icon';
                 break;
+            case 'spotify':
+                image.src = 'spotify.png';
+                image.alt = 'Spotify icon';
+                break;
+            case 'github':
+                image.src = 'github.png';
+                image.alt = 'GitHub icon';
+                break;
+            case 'duckduckgo':
+                image.src = 'duckduckgo.png';
+                image.alt = 'DuckDuckGo icon';
+                break;
         }
     }
     if(e.key === 'Enter')
@@ -63,6 +78,15 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
             break;
             case 'drive': 
             window.location = `https://drive.google.com/drive/search?q=${find}`;
+            break;
+            case 'spotify': 
+            window.location = `https://open.spotify.com/search/${find}`;
+            break;
+            case 'github': 
+            window.location = `https://github.com/search?q=${find}`;
+            break;
+            case 'duckduckgo': 
+            window.location = `https://duckduckgo.com/?q=${find}`;
             break;
             default: 
             window.location = `https://www.google.com/search?q=${find}`;
