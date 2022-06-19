@@ -1,5 +1,5 @@
 # Multisearch
-Vanilla Web implementation of a single site to search from multiple providers
+Vanilla Web implementation of a single site to search from multiple providers<br/>
 [View Deployment on GitHub Pages](https://rskbansal.github.io/multisearch)<br/>
 
 Supported providers (first_word):
