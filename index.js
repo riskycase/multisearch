@@ -6,7 +6,9 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
     switch(search_engine){
         case 'google':
         case 'youtube':
-        case 'docs': break;
+        case 'docs':
+        case 'slides':
+        case 'sheets':break;
         default: search_engine = 'google';
         search_query = input;
     }
