@@ -7,4 +7,4 @@
 
 ### Optional changes:
 - ✓ Add other search providers (GitHub, Spotify, etc)
-- [ ] Additional CSS styling (as you like)
+- ✓ Additional CSS styling (as you like)
