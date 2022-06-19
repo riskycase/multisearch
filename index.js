@@ -8,7 +8,8 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
         case 'youtube':
         case 'docs':
         case 'slides':
-        case 'sheets':break;
+        case 'sheets':
+        case 'drive': break;
         default: search_engine = 'google';
         search_query = input;
     }
@@ -36,6 +37,10 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
                 image.src = 'sheets.png';
                 image.alt = 'Google Sheets icon';
                 break;
+            case 'drive':
+                image.src = 'drive.png';
+                image.alt = 'Google Drive icon';
+                break;
         }
     }
     if(e.key === 'Enter')
@@ -46,8 +51,8 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
             case 'youtube': 
                 window.location = `https://www.youtube.com/results?search_query=${search_query}`;
                 break;
-            case 'slides':
-                window.location = `https://docs.google.com/document/?q=${search_query}`;
+            case 'drive':
+                window.location = `https://drive.google.com/drive/search?q=${search_query}`;
                 break;
             case 'sheets':
                 window.location = `https://docs.google.com/spreadsheets/?q=${search_query}`;
