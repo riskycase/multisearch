@@ -13,4 +13,5 @@ Supported providers (first_word):
 - Spotify (spotify)
 
 https://rskbansal.github.io/multisearch/
+
 [Icons created by freepik on Flaticon](https://www.flaticon.com/authors/freepik)
