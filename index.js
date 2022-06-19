@@ -25,19 +25,19 @@ document.querySelector(".search_input").addEventListener("keyup", (e) => {
     current_search = search_engine;
     const image = document.querySelector(".search_icon");
     switch (search_engine) {
-      //
-
       case "slides":
         image.src = "slides.png";
         image.alt = "Google slides icon";
+        break;
       case "drive":
         image.src = "drive.png";
         image.alt = "Google  drive icon";
+        break;
       case "sheets":
         image.src = "sheets.jpg";
         image.alt = "Google sheets icon";
+        break;
 
-      //
       case "google":
         image.src = "google.png";
         image.alt = "Google icon";
@@ -60,7 +60,7 @@ document.querySelector(".search_input").addEventListener("keyup", (e) => {
       case "youtube":
         window.location = `https://www.youtube.com/results?search_query=${search_query}`;
         break;
-      //
+
       case "slides":
         window.location = `https://docs.google.com/presentation/?q=${search_query}`;
         break;
@@ -71,7 +71,6 @@ document.querySelector(".search_input").addEventListener("keyup", (e) => {
         window.location = `https://docs.google.com/spreadsheets/?q=${search_query}`;
         break;
 
-      //
       default:
         window.location = `https://www.google.com/search?q=${search_query}`;
     }
