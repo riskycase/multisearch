@@ -13,4 +13,6 @@ Supported providers (first_word):
 - Amazon (amazon)
 - Spotify (spotify)
 
+Try not to get rickrolled :) [Learn More](https://www.youtube.com/watch?v=xvFZjo5PgG0)
+
 [Icons created by freepik on Flaticon](https://www.flaticon.com/authors/freepik)
