@@ -1,5 +1,6 @@
 # Multisearch
 Vanilla Web implementation of a single site to search from multiple providers
+[View Deployment on GitHub Pages](https://rskbansal.github.io/multisearch)<br/>
 
 Supported providers (first_word):
 - Google (google) (Default)
@@ -12,5 +13,4 @@ Supported providers (first_word):
 - Amazon (amazon)
 - Spotify (spotify)
 
-[View Deployment on GitHub Pages](https://rskbansal.github.io/multisearch)<br/>
 [Icons created by freepik on Flaticon](https://www.flaticon.com/authors/freepik)
