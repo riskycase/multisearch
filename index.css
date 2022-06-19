@@ -1,6 +1,7 @@
 html, body {
     height: 100vh;
     width: 100vw;
+     background-color:rgb(200, 182, 182);
 }
 body {
     display: flex;
@@ -24,6 +25,8 @@ body {
     font-size: 5rem;
     margin: 1.5rem;
     font-weight: 500;
+    font-family: 'MomsTypewriterRegular',monospace;
+    
 }
 @media screen and (max-width:540px) {
     .heading {
@@ -35,7 +38,7 @@ body {
     font-style: oblique;
 }
 .search_wrapper {
-    border: 0.125rem solid rgb(23, 23, 23);
+    border: 0.125rem solid dotted #575a6b;
     height: 3rem;
     padding: 0.25rem 0.75rem;
     box-sizing: border-box;
