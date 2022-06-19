@@ -12,5 +12,5 @@ Supported providers (first_word):
 - Amazon (amazon)
 - Spotify (spotify)
 
-[View Deployment on GitHub Pages](https://rskbansal.github.io/multisearch)
+[View Deployment on GitHub Pages](https://rskbansal.github.io/multisearch)<br/>
 [Icons created by freepik on Flaticon](https://www.flaticon.com/authors/freepik)
