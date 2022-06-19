@@ -5,5 +5,7 @@ Supported providers (first_word):
 - Google (google) (Default)
 - YouTube (youtube)
 - Google Docs (docs)
+- Google Sheets (sheets)
+- Google Slides (slides)
 
 [Icons created by freepik on Flaticon](https://www.flaticon.com/authors/freepik)
