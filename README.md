@@ -15,4 +15,6 @@ Supported providers (first_word):
 - animixplay
 - stackoverflow
 
+https://github.com/toasted-breads-2/multisearch
+
 [Icons created by freepik on Flaticon](https://www.flaticon.com/authors/freepik)
