@@ -3,6 +3,7 @@ html, body {
     width: 100vw;
 }
 body {
+    //background-color: aquamarine;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,10 +12,36 @@ body {
     font-family: 'Comfortaa', cursive;
     margin: 0;
 }
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index:1;
+}
+
+#myBtn {
+  position: fixed;
+  right: 0px;
+  bottom: 910px;
+  width: 150px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: black;
+  color: aquamarine;
+  cursor: pointer;
+  z-index:2;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     max-width: min(100vw, 80rem);
+    z-index:2;
+    text-align: center
     /* Hint */
 }
 .container > * {
@@ -48,7 +75,7 @@ body {
     position: absolute;
     font-size: 1.25rem;
     transform-origin: left;
-    background-color: white;
+    background-color: transparent;
     padding: 0 0.5rem;
     z-index: -1;
     margin-left: 1.5rem;
@@ -84,7 +111,16 @@ body {
     border-radius: 0.25rem;
     border: none;
     padding: 0.5rem 0.75rem;
+    cursor: pointer;
 }
+
+.search_button:hover
+{
+  opacity: 1;
+  background-color: #3a097a;
+  //border: 1px #99ccff solid;
+}
+
 .search_icon {
     width: 1.5rem;
     height: 1.5rem;
