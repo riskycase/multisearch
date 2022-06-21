@@ -36,7 +36,7 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
                 break;
             case 'sheets':
                 image.src='sheets.png';
-               image.alt= 'Sheets icon';
+                image.alt= 'Sheets icon';
                 break;
             case 'drive':
                 image.src='drive.png';
