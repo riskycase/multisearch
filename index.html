@@ -10,8 +10,18 @@
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
+        <style>
+            body {
+              background-image: url('bg.jpg');
+              background-size: cover;
+            }
+            </style>
     </head>
     <body>
+        <video autoplay muted loop id="myVideo">
+            <source src="awesome.mp4" type="video/mp4">
+        </video>
+        <button id="myBtn" onclick="myFunction()">Pause</button>
         <div class="container">
             <span class="heading">Multisearch</span>
             <span class="description">Start typing to choose a search engine</span>
@@ -20,7 +30,7 @@
                 <input class="search_input" type="text" name="search" alt="Search box" required pattern=".*\S+.*" id="input">
                 <label class="search_label" for="search">Search</label>
             </div>
-            <button class="search_button" type="submit">Search <span class="material-icons">arrow_forward</span> </button>
+            <button class="search_button" type="submit" value="submit">Search <span class="material-icons">arrow_forward</span> </button>
         </div>
         <script src="index.js"></script>
     </body>
