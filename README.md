@@ -5,5 +5,16 @@ Supported providers (first_word):
 - Google (google) (Default)
 - YouTube (youtube)
 - Google Docs (docs)
+- Google drive
+- Google slides
+- Google sheets
+- Spotify
+- github
+- wattpad
+- goodreads
+- animixplay
+- stackoverflow
+
+https://github.com/toasted-breads-2/multisearch
 
 [Icons created by freepik on Flaticon](https://www.flaticon.com/authors/freepik)
