@@ -10,7 +10,8 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
         case 'drive':
         case 'slides':
         case 'sheets':
-        case 'reddit': break;
+        case 'reddit':
+        case 'spotify': break;
         default: search_engine = 'google';
         // search_query = input;
     }
@@ -46,6 +47,10 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
                 image.src = 'reddit.png';
                 image.alt = 'Reddit icon';
                 break;
+            case 'spotify':
+                image.src = 'spotify.png';
+                image.alt = 'Spotify icon';
+                break;
         }
     }
     if (e.key === 'Enter')
@@ -67,6 +72,9 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
                 break;
             case 'reddit':
                 window.location = `https://www.reddit.com/search/?q=${search_query}`;
+                break;
+            case 'spotify':
+                window.location = `https://open.spotify.com/search/${search_query}`;
                 break;
             default:
                 window.location = `https://www.google.com/search?q=${search_query}`;
