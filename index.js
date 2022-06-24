@@ -9,7 +9,8 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
         case 'docs':
         case 'drive':
         case 'slides':
-        case 'sheets': break;
+        case 'sheets':
+        case 'reddit': break;
         default: search_engine = 'google';
         // search_query = input;
     }
@@ -41,6 +42,10 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
                 image.src = 'sheets.png';
                 image.alt = 'Google Sheets icon';
                 break;
+            case 'reddit':
+                image.src = 'reddit.png';
+                image.alt = 'Reddit icon';
+                break;
         }
     }
     if (e.key === 'Enter')
@@ -59,6 +64,9 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
                 break;
             case 'sheets':
                 window.location = `https://docs.google.com/spreadsheets/u/0/?tgif=d&q=${search_query}`;
+                break;
+            case 'reddit':
+                window.location = `https://www.reddit.com/search/?q=${search_query}`;
                 break;
             default:
                 window.location = `https://www.google.com/search?q=${search_query}`;
