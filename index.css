@@ -8,14 +8,17 @@ body {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'JetBrains Mono', cursive;
     margin: 0;
 }
 .container {
     display: flex;
     flex-direction: column;
     max-width: min(100vw, 80rem);
-    align-items: center;
+    /* Hint */
+    margin: auto;
+    text-align: center;
+    justify-content:  center;
 }
 .container > * {
     margin: 0.5rem;
@@ -68,7 +71,7 @@ body {
     background-color: transparent;
     flex-grow: 1;
     border: none;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'JetBrains Mono', cursive;
     font-size: 1.5rem;
     padding: 0 0.5rem;
     outline: none;
