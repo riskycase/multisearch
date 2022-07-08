@@ -1,6 +1,9 @@
 html, body {
     height: 100vh;
     width: 100vw;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    
 }
 body {
     display: flex;
@@ -8,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'JetBrains Mono', cursive;
     margin: 0;
 }
 .container {
@@ -16,6 +19,9 @@ body {
     flex-direction: column;
     max-width: min(100vw, 80rem);
     /* Hint */
+    margin: auto;
+    text-align: center;
+    justify-content:  center;
 }
 .container > * {
     margin: 0.5rem;
@@ -24,6 +30,7 @@ body {
     font-size: 5rem;
     margin: 1.5rem;
     font-weight: 500;
+    color: aliceblue;
 }
 @media screen and (max-width:540px) {
     .heading {
@@ -32,6 +39,7 @@ body {
 }
 .description {
     font-style: oblique;
+    color: aliceblue;
 }
 .search_wrapper {
     border: 0.125rem solid rgb(23, 23, 23);
@@ -39,8 +47,10 @@ body {
     padding: 0.25rem 0.75rem;
     box-sizing: border-box;
     border-radius: 0.5rem;
+    border-color: aliceblue;
     display: flex;
     align-items: center;
+    background-color:skyblue;
 }
 .search_label{
     transition: linear 0.25s;
@@ -68,7 +78,7 @@ body {
     background-color: transparent;
     flex-grow: 1;
     border: none;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'JetBrains Mono', cursive;
     font-size: 1.5rem;
     padding: 0 0.5rem;
     outline: none;
